@@ -218,7 +218,6 @@ R: Não! Basta um navegador para ler Markdown.
 
 Para dúvidas sobre o conteúdo:
 - 📧 Prof. Junior Freitas de Amaral
-- 📧 Junior.amaral@faculdadeimpacta.com.br
 
 ---
 
@@ -237,7 +236,5 @@ Para dúvidas sobre o conteúdo:
 ```
 
 ---
-
-**Bom aprendizado! 🚀**
 
 **Last Updated:** 04/02/2026
