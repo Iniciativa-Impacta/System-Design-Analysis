@@ -64,7 +64,6 @@ Documento que especifica de forma clara e estruturada os requisitos do sistema, 
 - **Data de Início:** 04/02/2026
 - **Disciplina:** Análise e Modelagem de Sistemas
 - **Professor:** Prof. Me. Junior Freitas de Amaral
-- **Email:** Junior.amaral@faculdadeimpacta.com.br
 
 ## 🛠️ Ferramentas Utilizadas
 
@@ -107,8 +106,6 @@ Documento que especifica de forma clara e estruturada os requisitos do sistema, 
 Para dúvidas ou sugestões sobre o conteúdo:
 
 **Prof. Me. Junior Freitas de Amaral**  
-📧 Junior.amaral@faculdadeimpacta.com.br
-
 ---
 
 **Última atualização:** 04/02/2026
