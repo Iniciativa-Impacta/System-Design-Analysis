@@ -247,7 +247,5 @@ Diferenciais:
 
 ---
 
-Documento mantido por: Equipe Lib Virtual
-Versao: 1.0
+Documento mantido por: Ditko.br
 Data: 16/02/2026
-Status: Aprovado para requisitos detalhados
