@@ -1,240 +1,102 @@
-# GUIA RÁPIDO - Como Usar Este Repositório
+# Guia Rapido - Lib Virtual
 
-## Comece Aqui!
+## Bem-vindo ao Projeto
 
-Bem-vindo ao repositório **System Design Analysis**! Este é um guia para ajudá-lo a começar rapidamente.
+Este repositorio contem a documentacao de Analise e Modelagem de Sistemas para a Lib Virtual - plataforma de assinatura de livros digitais inspirada no conceito de Netflix de livros, adaptada para o mercado brasileiro.
 
----
+## O Que E Este Projeto
 
-## 3 Formas de Usar Este Projeto
+A Lib Virtual e uma plataforma de assinatura de e-books com foco em autores brasileiros independentes e remuneracao justa baseada no consumo real de leitura.
 
-### OPÇÃO 1: Estudo Completo (Recomendado)
-**Tempo:** ~2h20min | **Para:** Aprender tudo do zero
+Status: Fase de Analise e Modelagem
 
-1. Leia [README.md](README.md) para entender o projeto
-2. Abra [docs/INDEX.md](docs/INDEX.md) para ver o mapa completo
-3. Estude em ordem:
-   - [PARTE 1](docs/PARTE1.md) - Fundamentos (15 min)
-   - [PARTE 2](docs/PARTE2.md) - Conceitos (20 min)
-   - [PARTE 3](docs/PARTE3.md) - Documentação (20 min)
-   - [PARTE 4](docs/PARTE4.md) - Prática (60 min)
-   - [PARTE 5](docs/PARTE5.md) - Validação (25 min)
+## Como Usar Este Repositorio
 
----
+### Para Entender o Negocio
+Tempo: 30 min
 
-### OPÇÃO 2: Estudo Rápido
-**Tempo:** ~1h | **Para:** Visão rápida dos conceitos
+1. Leia README.md - Visao geral
+2. Leia VISION.md - Documento de visao completo
+3. Consulte docs/REQUISITOS.md - Funcionalidades
 
-1. Leia [README.md](README.md)
-2. Scan rápido de [PARTE 1-3](docs/PARTE1.md)
-3. Execute [PARTE 4 - Exercício Prático](docs/PARTE4.md)
-4. Consulte [PARTE 5 - Checklist](docs/PARTE5.md) quando precisar
+### Para Estudar Engenharia de Software
+Tempo: 3h
 
----
+1. README.md - Contexto do projeto
+2. VISION.md - Visao do produto
+3. docs/PARTE1.md - Fundamentos
+4. docs/PARTE2.md - Engenharia de requisitos
+5. docs/PARTE3.md - SRS e documentacao
+6. docs/PARTE4.md - Modelagem UML
+7. docs/PARTE5.md - Validacao
 
-### OPÇÃO 3: Consulta Rápida (Referência)
-**Tempo:** Conforme necessário | **Para:** Procurar tópicos específicos
+### Para Desenvolver
+Conforme necessario
 
-Use o índice em [docs/INDEX.md](docs/INDEX.md) para encontrar:
-- Definições
-- Exemplos
-- Checklists
-- Templates
+1. README.md - Visao geral
+2. System-Requirements-Specification.docx - SRS
+3. Modelagem.pdf - Diagramas UML
+4. docs/REQUISITOS.md - Requisitos funcionais
 
----
+## O Problema
 
-## Mapa de Navegação
+- Livros digitais caros limitam acesso
+- Autores sem plataforma de distribuicao
+- Editoras buscam alternativas
 
-```
-INÍCIO
-  │
-  ├─→ README.md (Visão Geral)
-  │
-  └─→ docs/
-      │
-      ├─ INDEX.md (Mapa Completo)
-      │
-      ├─ PARTE 1: Fundamentos
-      ├─ PARTE 2: Conceitos
-      ├─ PARTE 3: Documentação
-      ├─ PARTE 4: Prática
-      └─ PARTE 5: Validação
-```
+## A Solucao
 
----
+Plataforma de assinatura onde:
+- Leitores tem acesso ilimitado ao catalogo
+- Autores recebem proporcionalmente a leitura
+- Dashboard transparente para todos
 
-## O Que Você Vai Aprender
+## Diferenciais
 
-```
-┌─────────────────────────────────────────┐
-│ PARTE 1: POR QUÊ?                       │
-│ • Importância da modelagem              │
-│ • Benefícios práticos                   │
-└─────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────┐
-│ PARTE 2: COMO?                          │
-│ • Tipos de requisitos                   │
-│ • Técnicas de elicitação                │
-└─────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────┐
-│ PARTE 3: DOCUMENTAÇÃO                   │
-│ • SRS e artefatos                       │
-│ • Rastreabilidade                       │
-└─────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────┐
-│ PARTE 4: PRÁTICA                        │
-│ • Exercício completo                    │
-│ • Sistema de Biblioteca                 │
-└─────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────┐
-│ PARTE 5: VALIDAÇÃO                      │
-│ • Critérios de qualidade                │
-│ • Checklist                             │
-└─────────────────────────────────────────┘
-            ↓
-        PRONTO!
-```
+- Foco em autores brasileiros independentes
+- Transparencia na remuneracao
+- Dashboard analitico robusto
+- Modelo sustentavel
+
+## Equipe
+
+| Nome | Papel |
+|------|-------|
+| Ryan | Product Owner |
+| Felipe Wilson | Analista de Requisitos |
+| Gustavo Vechiatto | Stakeholder Autor |
+| Iago | Analista de Requisitos |
+| Lucas | Stakeholder Leitor |
+
+## Referencias
+
+- SOMMERVILLE, Ian. Engenharia de Software
+- PRESSMAN, Roger. Engenharia de Software: Uma Abordagem Profissional
+- GUEDES, G. UML 2: uma abordagem pratica
+
+## Cronograma
+
+Fase Atual: Analise e Modelagem
+
+- Definicao de visao e escopo
+- Analise de mercado e personas
+- Elicitacao de requisitos
+- Criacao do SRS
+- Modelagem UML
+- Prototipacao
+- Validacao e apresentacao
+
+Proximas Fases:
+- Q2 2026: Desenvolvimento do MVP
+- Q3 2026: Beta e testes
+- Q4 2026: Lancamento
+
+## Comece Agora
+
+1. Entender o negocio - Leia VISION.md
+2. Aprender engenharia - Comece por docs/PARTE1.md
+3. Desenvolver - Revise System-Requirements-Specification.docx
 
 ---
 
-## Por Onde Começar?
-
-### Se você é **iniciante**:
-➡️ Comece pelo [README.md](README.md), depois [PARTE 1](docs/PARTE1.md)
-
-### Se você precisa **aprender rápido**:
-➡️ Vá direto para [PARTE 4 - Exercício Prático](docs/PARTE4.md)
-
-### Se você quer **referência**:
-➡️ Use [docs/INDEX.md](docs/INDEX.md) como índice
-
-### Se você precisa **validar requisitos**:
-➡️ Consulte [PARTE 5 - Checklist](docs/PARTE5.md)
-
----
-
-## Planejamento de Estudo
-
-### Estudo em 1 Dia
-```
-Manhã:   PARTE 1 + 2 (35 min)
-Tarde:   PARTE 3 + 4 (80 min)
-Noite:   PARTE 5 (25 min)
-Total:   2h20min
-```
-
-### Estudo em Semana
-```
-Seg: README + PARTE 1 (20 min)
-Ter: PARTE 2 (20 min)
-Qua: PARTE 3 (20 min)
-Qui: PARTE 4 (60 min)
-Sex: PARTE 5 + Revisão (30 min)
-```
-
----
-
-## Dúvidas Frequentes
-
-**P: Por onde começo?**  
-R: Leia o [README.md](README.md) primeiro!
-
-**P: Qual é a ordem certa?**  
-R: Siga as 5 partes na sequência (PARTE 1 → 5)
-
-**P: Posso pular partes?**  
-R: Não recomendado. São progressivas.
-
-**P: Há exercícios?**  
-R: Sim! PARTE 4 é um exercício completo.
-
-**P: Preciso de software especial?**  
-R: Não! Basta um navegador para ler Markdown.
-
----
-
-## Como Abrir os Arquivos
-
-### Opção 1: GitHub (Online)
-```
-1. Acesse o repositório no GitHub
-2. Clique no arquivo
-3. Leia diretamente online
-```
-
-### Opção 2: VS Code (Local)
-```
-1. Abra a pasta no VS Code
-2. Clique no arquivo .md
-3. Use a visualização de preview
-```
-
-### Opção 3: Markdown Viewer
-```
-1. Abra qualquer visualizador de Markdown
-2. Clique no arquivo
-3. Leia com formatação completa
-```
-
----
-
-## Checklist de Primeiro Uso
-
-- [ ] Li o [README.md](README.md)
-- [ ] Abri [docs/INDEX.md](docs/INDEX.md)
-- [ ] Comecei a ler [PARTE 1](docs/PARTE1.md)
-- [ ] Criei uma pasta para anotações pessoais
-- [ ] Planejei meu estudo (1 dia ou 1 semana)
-
----
-
-## O Que Cada Parte Contém
-
-| Parte | Arquivo | Tempo | Tipo | Objetivo |
-|-------|---------|-------|------|----------|
-| 1 | [PARTE1.md](docs/PARTE1.md) | 15 min | Teórico | Fundamentos |
-| 2 | [PARTE2.md](docs/PARTE2.md) | 20 min | Teórico | Conceitos |
-| 3 | [PARTE3.md](docs/PARTE3.md) | 20 min | Teórico | Documentação |
-| 4 | [PARTE4.md](docs/PARTE4.md) | 60 min | Prático | Exercício |
-| 5 | [PARTE5.md](docs/PARTE5.md) | 25 min | Referência | Validação |
-
----
-
-## Seus Próximos Passos
-
-1. **Agora:** Clique em [PARTE 1](docs/PARTE1.md) ou [README.md](README.md)
-2. **Depois:** Siga sequencialmente
-3. **Pratique:** Faça o exercício da PARTE 4
-4. **Valide:** Use o checklist da PARTE 5
-5. **Aplique:** Em seus próprios projetos
-
----
-
-## Precisa de Ajuda?
-
-Para dúvidas sobre o conteúdo:
-- Prof. Junior Freitas de Amaral
-
----
-
-## Você Está Pronto!
-
-**Escolha sua forma de aprender e comece agora!**
-
-```
-┌─────────────────────────────────┐
-│  CLIQUE PARA COMEÇAR:           │
-│                                 │
-│  README.md (Visão Geral)        │
-│  ou                             │
-│  docs/PARTE1.md (Conceitos)     │
-└─────────────────────────────────┘
-```
-
----
-
-**Ultima atualização:** 09/02/2026
+Ultima atualizacao: 16/02/2026
