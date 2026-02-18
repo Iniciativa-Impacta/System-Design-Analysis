@@ -92,7 +92,7 @@ A **fonte ou origem do requisito é conhecida** e pode ser referenciada através
 
 **Solução:**
 
-**Requisito:** "SSS-050 - O sistema DEVE permitir análise de dados estatísticos de empréstimos (origem: requisição do Bibliotecário em 15/01/2026, discussão com gerente em 20/01/2026). Vinculado à característica 'Relatórios' do documento de escopo."
+**Requisito:** "SSS-050 - O sistema DEVE permitir análise de dados estatísticos de consumo de e-books (origem: requisição do Autor em 15/01/2026, discussão com gerente de produto em 20/01/2026). Vinculado à característica 'Dashboard Analítico' do documento de escopo."
 
 #### Matriz de Rastreabilidade Exemplo
 
@@ -100,11 +100,11 @@ A **fonte ou origem do requisito é conhecida** e pode ser referenciada através
 ┌────────────┬──────────────┬──────────────┬───────────────────┐
 │ Req ID     │ Origem       │ Prioridade   │ Validado com      │
 ├────────────┼──────────────┼──────────────┼───────────────────┤
-│ RF-001     │ Entrevista   │ ALTA         │ Bibliotecário     │
-│            │ Bibliotecário│              │ (05/02/2026)      │
+│ RF-001     │ Entrevista   │ ALTA         │ Autor             │
+│            │ Autor        │              │ (05/02/2026)      │
 │            │ (02/02/2026) │              │                   │
 ├────────────┼──────────────┼──────────────┼───────────────────┤
-│ RF-002     │ Escopo       │ ALTA         │ Estudante         │
+│ RF-002     │ Escopo       │ ALTA         │ Leitor            │
 │            │ Projeto      │              │ (05/02/2026)      │
 │            │ (01/02/2026) │              │                   │
 ├────────────┼──────────────┼──────────────┼───────────────────┤
@@ -130,21 +130,21 @@ O requisito é **simples e claro**? É fácil de entender sem ambiguidades?
 
 #### Contra-exemplo
 
-**Requisito:** "O Sistema DEVE permitir a liberação de notas sempre que as condições propícias tenham sido satisfeitas."
+**Requisito:** "O Sistema DEVE permitir a publicação de e-books sempre que as condições propícias tenham sido satisfeitas."
 
 **Problemas:**
-- "liberação de notas" não está claro
+- "publicação de e-books" não especifica processo
 - "condições propícias" é vago e subjetivo
 - Como saber quando está satisfeito?
 - Como validar?
 
 **Solução:**
 
-**Requisito:** "O Sistema DEVE permitir que o Professor libere notas para os alunos após finalizar a correção de todas as provas da avaliação."
+**Requisito:** "O Sistema DEVE permitir que o Autor publique e-books na plataforma após finalizar upload do arquivo EPUB/PDF e preencher metadados obrigatórios (título, sinópse, categoria, capa)."
 
 **Ou ainda mais específico:**
 
-"O Sistema DEVE, quando o Professor marcar a avaliação como 'finalizada', liberar automaticamente as notas para todos os alunos da turma via email e painel."
+"O Sistema DEVE, quando o Autor marcar o e-book como 'pronto para publicação', validar automaticamente metadados e arquivo, e disponibilizar no catálogo em até 24 horas após aprovação da moderação."
 
 #### Contra-exemplo 2
 
@@ -187,31 +187,31 @@ Ou:
 
 ```
 ═══════════════════════════════════════════════════════════
-Requisito: RF-003 - Registrar Empréstimo
-═══════════════════════════════════════════════════════════
+Requisito: RF-003 - Iniciar Leitura de E-book
+═══════════════════════════════════════════════════════════════
 
 Especificação:
-"O Sistema, quando solicitado pelo Bibliotecário, DEVE registrar 
-empréstimo de livro com os seguintes dados: ID do usuário, ID do 
-livro, data de empréstimo e prazo de devolução (14 dias por padrão), 
-atualizando a disponibilidade do livro no acervo."
+"O Sistema, quando solicitado pelo Leitor assinante, DEVE iniciar 
+leitura de e-book com os seguintes dados: ID do usuário, ID do 
+e-book, sincronizar progresso de leitura entre dispositivos, 
+atualizando o consumo para cálculo de remuneração do autor."
 
 VALIDAÇÃO:
 
 1. CONSISTÊNCIA
-   ✓ Compatível com RF-001 (Cadastro de livros)
-   ✓ Compatível com RF-004 (Cálculo de multa)
+   ✓ Compatível com RF-001 (Cadastro de e-books)
+   ✓ Compatível com RF-006 (Cálculo de remuneração)
    ✓ Sem conflitos identificados
 
 2. AUSÊNCIA DE ERROS
-   ✓ Lógica correta (registrar + atualizar)
-   ✓ Prazo padrão é realista (14 dias)
+   ✓ Lógica correta (iniciar + rastrear + sincronizar)
+   ✓ Sincronização entre dispositivos é implementável
    ✓ Dados necessários estão especificados
 
 3. RASTREABILIDADE
-   ✓ Origem: Entrevista Bibliotecário (02/02/2026)
-   ✓ Validado com: Stakeholder Biblioteca (05/02/2026)
-   ✓ Vinculado ao caso de uso: "Emprestar Livro"
+   ✓ Origem: Entrevista Leitor (02/02/2026)
+   ✓ Validado com: Stakeholder Assinante (05/02/2026)
+   ✓ Vinculado ao caso de uso: "Iniciar Leitura de E-book"
 
 4. CONCISÃO
    ✓ Descreve uma única funcionalidade
