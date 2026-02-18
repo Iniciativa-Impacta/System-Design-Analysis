@@ -1,10 +1,10 @@
-# PARTE 4 - Exercício Prático: Sistema de Gerenciamento de Biblioteca
+# PARTE 4 - Exercício Prático: Lib Virtual - Plataforma de Assinatura de E-books
 
 ## Dinâmica em Sala de Aula
 
 ### Objetivo Geral
 
-Construir um SRS completo para um **Sistema de Gerenciamento de Biblioteca** através de colaboração entre stakeholders e analistas, simulando um projeto real.
+Construir um SRS completo para a **Lib Virtual - Plataforma de Assinatura de E-books** através de colaboração entre stakeholders e analistas, simulando um projeto real.
 
 ## Objetivos Específicos
 
@@ -32,27 +32,29 @@ Construir um SRS completo para um **Sistema de Gerenciamento de Biblioteca** atr
   - Resolve conflitos construtivamente
 
 #### 2. **Stakeholders** (2 pessoas)
-- **Responsabilidade:** Representam os usuários do sistema (bibliotecários, estudantes, professores)
+- **Responsabilidade:** Representam os usuários da plataforma (leitores, autores, editoras)
 - **Perspectivas:**
 
-**Bibliotecário:**
-- Precisa gerenciar acervo
-- Controlar empréstimos e devoluções
-- Cobrar multas
-- Manter informações de usuários
-- Gerar relatórios de uso
+**Leitor (Assinante):**
+- Precisa acessar catálogo de e-books
+- Ler e-books em múltiplos dispositivos
+- Sincronizar progresso de leitura
+- Receber recomendações personalizadas
+- Gerenciar assinatura
 
-**Estudante:**
-- Precisa encontrar livros
-- Renovar empréstimos online
-- Verificar multas pendentes
-- Acessar histórico de leituras
-- Reservar livros
+**Autor Independente:**
+- Precisa publicar e-books na plataforma
+- Acompanhar métricas de leitura
+- Receber remuneração proporcional
+- Definir disponibilidade e preços
+- Acessar dashboard analítico
 
-**Professor:**
-- Precisa de lista de leituras obrigatória
-- Acesso rápido a materiais
-- Relatório de uso em turmas
+**Editora:**
+- Precisa gerenciar catálogo digital
+- Controlar direitos autorais
+- Visualizar relatórios de consumo
+- Receber repasses financeiros
+- Definir estratégias de distribuição
 
 #### 3. **Analistas de Requisitos** (2 pessoas)
 - **Responsabilidade:** Elicitar e documentar os requisitos
@@ -78,47 +80,48 @@ Os stakeholders **listam suas necessidades e expectativas** para o sistema.
 
 **Exemplos de Necessidades por Stakeholder:**
 
-**Bibliotecário:**
-- "Preciso cadastrar novos livros com agilidade"
-- "Preciso controlar empréstimos e devoluções"
-- "Preciso saber quem tem livros vencidos"
-- "Preciso gerar relatórios de acervo"
-- "Preciso bloquear usuários com multas"
+**Leitor (Assinante):**
+- "Preciso buscar e-books por gênero, autor ou palavra-chave"
+- "Preciso ler em celular, tablet e computador"
+- "Preciso que meu progresso sincronize entre dispositivos"
+- "Preciso de recomendações baseadas no meu gosto"
+- "Preciso gerenciar minha assinatura facilmente"
 
-**Estudante:**
-- "Quero buscar livros por vários critérios"
-- "Quero renovar empréstimos online"
-- "Quero saber se tem livro disponível"
-- "Quero ver meu histórico de leituras"
-- "Quero receber notificações de vencimento"
+**Autor Independente:**
+- "Quero publicar meus e-books com autonomia"
+- "Quero saber quantas pessoas leram meu livro"
+- "Quero ver quanto vou receber por mês"
+- "Quero definir preço base dos meus livros"
+- "Quero dashboard com estatísticas detalhadas"
 
-**Professor:**
-- "Quero criar listas de leituras obrigatórias"
-- "Quero que meus alunos encontrem fácil os livros"
-- "Quero relatório de quem pegou os livros"
+**Editora:**
+- "Queremos enviar catálogo completo para a plataforma"
+- "Queremos controlar quais livros ficam disponíveis"
+- "Queremos relatório de consumo por título"
+- "Queremos receber pagamentos mensais transparentes"
 
 #### Fase B: Analistas Fazem Perguntas (10 min)
 Os **analistas de requisitos fazem perguntas** para esclarecer as necessidades.
 
 **Exemplos de Perguntas:**
 
-Para o Bibliotecário:
-- "Quais informações são necessárias para cadastrar um livro?"
-  - Respostas esperadas: código, título, autor, ISBN, data de publicação, editora, quantidade, localização na prateleira
-- "Como o sistema deve lidar com livros duplicados?"
-- "Como o sistema deve calcular multas por atraso?"
-- "Qual é o prazo máximo de empréstimo?"
+Para o Leitor:
+- "Quais informações são importantes ao buscar um e-book?"
+  - Respostas esperadas: título, autor, sinópse, categoria, avaliações, número de páginas
+- "Como você quer marcar sua leitura? Favoritos, marcações, notas?"
+- "Precisa ler offline? Como deve funcionar?"
+- "Que tipo de recomendações você espera?"
 
-Para o Estudante:
-- "Por quais critérios você quer buscar livros?"
-  - Respostas esperadas: título, autor, ISBN, palavra-chave, categoria
-- "Como você quer renovar empréstimos?"
-- "Com quanto tempo antes você quer notificação?"
+Para o Autor:
+- "Quais informações você quer monitorar sobre suas obras?"
+  - Respostas esperadas: número de leitores, tempo médio de leitura, abandono, conclusão, avaliações
+- "Como deve funcionar o cálculo de remuneração?"
+- "Quer definir disponibilidade regional dos e-books?"
 
-Para o Professor:
-- "Como você quer estruturar a lista de leituras?"
-- "Quem pode ver suas listas de leitura?"
-- "Como você quer acompanhar o uso?"
+Para a Editora:
+- "Como vocês querem enviar os e-books? Upload individual ou em lote?"
+- "Que formato de relatório é necessário?"
+- "Como querem controlar direitos autorais e licenciamento?"
 
 **Use post-its (virtuais) para anotar cada requisito identificado.**
 
@@ -129,24 +132,24 @@ Para o Professor:
 Organize os requisitos em:
 
 **Requisitos Funcionais (O QUE):**
-- "O sistema DEVE permitir cadastro de livros"
-- "O sistema DEVE permitir busca por autor"
-- "O sistema DEVE registrar empréstimos"
-- "O sistema DEVE calcular multas"
-- "O sistema DEVE renovar empréstimos online"
+- "O sistema DEVE permitir cadastro de e-books"
+- "O sistema DEVE permitir busca por autor, gênero e palavra-chave"
+- "O sistema DEVE processar assinaturas recorrentes"
+- "O sistema DEVE sincronizar progresso de leitura entre dispositivos"
+- "O sistema DEVE calcular remuneração proporcional ao consumo"
 
 **Requisitos Não-Funcionais (COMO):**
-- "O sistema DEVE processar buscas em menos de 2 segundos"
-- "O sistema DEVE criptografar dados de login"
-- "A interface DEVE ser simples e intuitiva"
-- "O sistema DEVE funcionar em navegador web"
-- "O sistema DEVE estar disponível 24/7"
+- "O sistema DEVE abrir e-books em menos de 2 segundos"
+- "O sistema DEVE criptografar dados de pagamento"
+- "A interface de leitura DEVE ser intuitiva e responsiva"
+- "O sistema DEVE funcionar em iOS, Android e Web"
+- "O sistema DEVE estar disponível 99.9% do tempo"
 
 **Restrições:**
-- "Deve ser desenvolvido em Java"
-- "Orçamento máximo: R$ 50.000"
-- "Deve estar pronto em 6 meses"
 - "Deve estar em conformidade com LGPD"
+- "Orçamento máximo: R$ 200.000"
+- "MVP deve estar pronto em 6 meses"
+- "Deve suportar formatos EPUB e PDF"
 
 #### Passo 2: Priorizar (5 min)
 
@@ -154,25 +157,26 @@ Use escala simples:
 
 | Nível | Descrição | Exemplos |
 |-------|-----------|----------|
-| **ALTA** | Crítico para operação | Cadastro, empréstimo, devolução |
-| **MÉDIA** | Importante mas não crítico | Renovação, relatórios |
-| **BAIXA** | Nice-to-have | Notificações, recomendações |
+| **ALTA** | Crítico para operação | Cadastro, busca, leitura, assinatura |
+| **MÉDIA** | Importante mas não crítico | Recomendações, dashboard autor |
+| **BAIXA** | Nice-to-have | Notificações, gamificação |
 
 **Matriz de Priorização:**
 
 ```
-┌─────────────────────────────────────┬──────────┐
-│ Requisito                           │ Prioridade│
-├─────────────────────────────────────┼──────────┤
-│ Cadastro de livros                  │ ALTA     │
-│ Empréstimo                          │ ALTA     │
-│ Devolução                           │ ALTA     │
-│ Búsqueda de livros                  │ ALTA     │
-│ Cálculo de multas                   │ MÉDIA    │
-│ Renovação online                    │ MÉDIA    │
-│ Relatórios estatísticos             │ BAIXA    │
-│ Notificações automáticas            │ BAIXA    │
-└─────────────────────────────────────┴──────────┘
+┌──────────────────────────────────────────────┬──────────┐
+│ Requisito                                   │ Prioridade│
+├──────────────────────────────────────────────┼──────────┤
+│ Cadastro de e-books                          │ ALTA     │
+│ Busca de e-books                             │ ALTA     │
+│ Leitura digital multi-dispositivo            │ ALTA     │
+│ Processamento de assinaturas                 │ ALTA     │
+│ Sincronização de progresso                    │ ALTA     │
+│ Cálculo de remuneração                       │ MÉDIA    │
+│ Dashboard de autor/editora                   │ MÉDIA    │
+│ Sistema de recomendações                     │ BAIXA    │
+│ Notificações automáticas                     │ BAIXA    │
+└──────────────────────────────────────────────┴──────────┘
 ```
 
 ### **Parte 4: Documentação no SRS** (~10 minutos)
@@ -180,7 +184,7 @@ Use escala simples:
 Organize os requisitos no **template simplificado do MIRO:**
 
 ```
-SISTEMA DE GERENCIAMENTO DE BIBLIOTECA
+LIB VIRTUAL - PLATAFORMA DE ASSINATURA DE E-BOOKS
 Data: 04/02/2026
 Grupo: [Nome do Grupo]
 
@@ -188,61 +192,87 @@ Grupo: [Nome do Grupo]
 
 REQUISITOS FUNCIONAIS
 
-RF-001: Cadastro de Livros
+RF-001: Cadastro de E-books
 ├─ Prioridade: ALTA
-├─ Descrição: O sistema DEVE permitir cadastro de novos livros com os seguintes campos obrigatórios: código, título, autor, ISBN
-├─ Ator: Bibliotecário
-└─ Caso de Uso: Cadastrar Livro
+├─ Descrição: O sistema DEVE permitir cadastro de e-books com os seguintes campos obrigatórios: ISBN, título, autor, editora, categoria, formato (EPUB/PDF)
+├─ Ator: Autor, Editora
+└─ Caso de Uso: Publicar E-book
 
-RF-002: Busca de Livros
+RF-002: Busca de E-books
 ├─ Prioridade: ALTA
-├─ Descrição: O sistema DEVE permitir busca de livros por título, autor, ISBN ou palavra-chave
-├─ Ator: Estudante, Professor
+├─ Descrição: O sistema DEVE permitir busca de e-books por título, autor, categoria, ISBN ou palavra-chave
+├─ Ator: Leitor
 └─ Critério de Aceitação: Resultado em menos de 2 segundos
 
-RF-003: Registrar Empréstimo
+RF-003: Leitura Digital
 ├─ Prioridade: ALTA
-├─ Descrição: O sistema DEVE registrar empréstimos com data de empréstimo e prazo de devolução
-├─ Ator: Bibliotecário
-└─ Restrição: Máximo 5 livros por usuário
+├─ Descrição: O sistema DEVE permitir leitura de e-books em múltiplos dispositivos (Web, iOS, Android)
+├─ Ator: Leitor
+└─ Restrição: Apenas assinantes ativos podem ler
 
-RF-004: Calcular Multa
-├─ Prioridade: MÉDIA
-├─ Descrição: O sistema DEVE calcular multa diária de R$ 2,00 por dia de atraso
+RF-004: Processamento de Assinatura
+├─ Prioridade: ALTA
+├─ Descrição: O sistema DEVE processar assinaturas recorrentes mensais com cobrança automática
 ├─ Ator: Sistema (automático)
-└─ Pós-condição: Multa vinculada ao usuário
+└─ Pós-condição: Assinatura ativa ou cancelada
+
+RF-005: Sincronização de Progresso
+├─ Prioridade: ALTA
+├─ Descrição: O sistema DEVE sincronizar progresso de leitura entre todos os dispositivos do leitor
+├─ Ator: Sistema (automático)
+└─ Métrica: Sincronização em tempo real (< 5 segundos)
+
+RF-006: Cálculo de Remuneração
+├─ Prioridade: MÉDIA
+├─ Descrição: O sistema DEVE calcular remuneração de autores/editoras proporcional ao tempo de leitura de suas obras
+├─ Ator: Sistema (automático)
+└─ Fórmula: Baseado em páginas lidas vs total do catálogo
+
+RF-007: Dashboard Analítico
+├─ Prioridade: MÉDIA
+├─ Descrição: O sistema DEVE fornecer dashboard com métricas de desempenho para autores e editoras
+├─ Ator: Autor, Editora
+└─ Métricas: Leitores únicos, tempo médio, taxa de conclusão, receita
 
 ═══════════════════════════════════════════════════════════
 
 REQUISITOS NÃO-FUNCIONAIS
 
 RNF-001: Performance
-├─ Descrição: O sistema DEVE processar operações de busca em menos de 2 segundos
-└─ Métrica: Tempo de resposta < 2s para 95% das requisições
+├─ Descrição: O sistema DEVE abrir e-books em menos de 2 segundos
+└─ Métrica: Tempo de carregamento < 2s para 95% das aberturas
 
 RNF-002: Segurança
-├─ Descrição: O sistema DEVE autenticar usuários com login e senha
-└─ Implementação: Criptografia SHA-256 para senhas
+├─ Descrição: O sistema DEVE criptografar dados de pagamento e proteger conteúdo contra pirataria
+└─ Implementação: PCI-DSS compliance, DRM para e-books
 
 RNF-003: Disponibilidade
-├─ Descrição: O sistema DEVE estar disponível 24/7 com máximo 1 hora de downtime por mês
-└─ SLA: 99.5% de disponibilidade
+├─ Descrição: O sistema DEVE estar disponível 99.9% do tempo
+└─ SLA: Máximo 43 minutos de downtime por mês
+
+RNF-004: Usabilidade
+├─ Descrição: Interface de leitura DEVE ser intuitiva e acessível
+└─ Padrão: WCAG 2.1 nível AA
 
 ═══════════════════════════════════════════════════════════
 
 RESTRIÇÕES
 
-REST-001: Tecnologia
-├─ Descrição: Deve ser desenvolvido em Java 11 ou superior
-└─ Justificativa: Padrão da empresa
+REST-001: Conformidade
+├─ Descrição: Deve estar em conformidade com LGPD para dados pessoais
+└─ Validação: Auditoria externa obrigatória
 
-REST-002: Prazo
-├─ Descrição: Sistema deve estar pronto em 6 meses
-└─ Data Limite: 04/08/2026
+REST-002: Formatos
+├─ Descrição: MVP deve suportar EPUB e PDF
+└─ Justificativa: Formatos mais comuns no mercado
 
-REST-003: Conformidade
-├─ Descrição: Deve estar em conformidade com LGPD
-└─ Validação: Auditoria externa
+REST-003: Prazo
+├─ Descrição: MVP deve estar pronto em 6 meses
+└─ Data Limite: 18/08/2026
+
+REST-004: Orçamento
+├─ Descrição: Orçamento máximo de R$ 200.000 para MVP
+└─ Breakdown: 60% desenvolvimento, 20% infraestrutura, 20% marketing
 ```
 
 ### **Parte 5: Apresentação e Feedback** (~15 minutos)
@@ -268,17 +298,23 @@ Cada grupo apresenta:
 ### Requisitos Coletados - Grupo A
 
 **Funcionalidades Críticas:**
-- Cadastro de livros (código, título, autor, ISBN, categoria, quantidade)
-- Empréstimo com prazo máximo de 14 dias
-- Devolução e cálculo automático de multa (R$ 2/dia)
-- Busca avançada (por autor, título, categoria)
-- Renovação online (máximo 2x, se sem multa)
+- Cadastro de e-books (ISBN, título, autor, editora, categoria, formato)
+- Busca avançada (por autor, título, categoria, palavra-chave)
+- Leitura multi-dispositivo com sincronização de progresso
+- Processamento de assinaturas recorrentes
+- Cálculo de remuneração proporcional ao consumo
 
 **Não-Funcionais:**
-- Performance: Resposta em < 2 segundos
-- Segurança: Senha criptografada, LGPD
-- Dados: Backup diário automatizado
-- 📱 Interface: Web-based, responsiva
+- Performance: Abertura de e-book em < 2 segundos
+- Segurança: Dados de pagamento criptografados, DRM anti-pirataria
+- Disponibilidade: 99.9% uptime
+- 📱 Interface: Web, iOS e Android com design responsivo
+
+**Diferenciais da Lib Virtual:**
+- Dashboard analítico completo para autores
+- Transparência total na remuneração
+- Recomendações personalizadas por IA
+- Modelo sustentável para autores independentes
 
 ## 🎓 Aprendizados Esperados
 

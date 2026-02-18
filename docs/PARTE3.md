@@ -106,40 +106,40 @@ O SRS deve:
 - Prototipagem
 - Referências
 
-## Exemplo: Sistema de Gerenciamento de Biblioteca
+## Exemplo: Lib Virtual - Plataforma de Assinatura de E-books
 
 ### Estrutura de Requisitos Funcionais
 
 ```
-SSS01 - Cadastro e Gestão de Produtos/Livros
-├── C01 - O sistema DEVE permitir cadastro de livros
-│   └── Campos obrigatórios: código, nome, descrição
-├── C02 - O sistema DEVE permitir consulta de livros
-│   └── Por código, nome, autor ou categoria
-└── C03 - O sistema DEVE permitir alteração de livros
-    └── Apenas administrador pode alterar
+SSS01 - Cadastro e Gestão de E-books
+├── C01 - O sistema DEVE permitir cadastro de e-books
+│   └── Campos obrigatórios: ISBN, título, autor, editora, categoria
+├── C02 - O sistema DEVE permitir consulta de e-books
+│   └── Por título, autor, ISBN, categoria ou palavra-chave
+└── C03 - O sistema DEVE permitir alteração de e-books
+    └── Apenas autor ou editora vinculada pode alterar
 
-SSS02 - Gerenciamento de Empréstimos
-├── E01 - O sistema DEVE registrar empréstimos
-├── E02 - O sistema DEVE permitir renovação
-└── E03 - O sistema DEVE calcular multas por atraso
+SSS02 - Gerenciamento de Assinaturas
+├── A01 - O sistema DEVE processar assinaturas recorrentes
+├── A02 - O sistema DEVE permitir cancelamento a qualquer momento
+└── A03 - O sistema DEVE calcular distribuição de receita por leitura
 
-SSS03 - Gerenciamento de Usuários
-├── U01 - O sistema DEVE permitir cadastro de usuários
-├── U02 - O sistema DEVE autenticar usuários
-└── U03 - O sistema DEVE manter histórico de empréstimos
+SSS03 - Gerenciamento de Leitura
+├── L01 - O sistema DEVE registrar progresso de leitura
+├── L02 - O sistema DEVE sincronizar entre dispositivos
+└── L03 - O sistema DEVE calcular tempo de leitura por e-book
 
-SSS04 - Relatórios
-├── R01 - O sistema DEVE gerar relatório de utilizações
-├── R02 - O sistema DEVE gerar relatório de multas
-└── R03 - O sistema DEVE gerar relatório de acervo
+SSS04 - Relatórios e Analytics
+├── R01 - O sistema DEVE gerar relatório de consumo de leitura
+├── R02 - O sistema DEVE gerar relatório de remuneração de autores
+└── R03 - O sistema DEVE gerar dashboard analítico para editoras
 ```
 
 ## Requisitos Não-Funcionais do Sistema
 
 ### Desempenho
-- O sistema DEVE processar cadastro de livro em menos de 2 segundos
-- O sistema DEVE suportar até 1000 usuários simultâneos
+- O sistema DEVE processar abertura de e-book em menos de 2 segundos
+- O sistema DEVE suportar até 1000 usuários simultâneos lendo
 
 ### Segurança
 - O sistema DEVE autenticar usuários com login e senha
@@ -191,7 +191,7 @@ SSS04 - Relatórios
 
 ## Próxima Etapa
 
-Na **PARTE 4**, aplicaremos todos esses conceitos em um **exercício prático** onde desenvolveremos um SRS completo para um **Sistema de Gerenciamento de Biblioteca**.
+Na **PARTE 4**, aplicaremos todos esses conceitos em um **exercício prático** onde desenvolveremos um SRS completo para a **Lib Virtual - Plataforma de Assinatura de E-books**.
 
 ---
 
