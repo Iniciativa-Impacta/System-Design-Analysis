@@ -125,7 +125,7 @@ Agora que compreendemos a importância e necessidade da modelagem, passaremos pa
 
 1. **PARTE 2:** Fundamentos da Engenharia de Requisitos
 2. **PARTE 3:** Especificação de Requisitos de Software (SRS)
-3. **PARTE 4:** Exercício Prático - Sistema de Biblioteca
+3. **PARTE 4:** Exercício Prático - Lib Virtual (Plataforma de Assinatura de E-books)
 4. **PARTE 5:** Validação e Checklist de Requisitos
 
 ## Equipe do Projeto
