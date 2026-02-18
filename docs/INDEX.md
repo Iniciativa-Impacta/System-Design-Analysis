@@ -62,8 +62,8 @@ Domine a **documentação formal** de requisitos:
 **Duração: ~60 minutos (Dinâmica em sala)**
 
 **Aplique** tudo na prática com o exercício:
-- Sistema de Gerenciamento de Biblioteca
-- Dinâmica de papéis (Stakeholders e Analistas)
+- Lib Virtual - Plataforma de Assinatura de E-books
+- Dinâmica de papéis (Stakeholders: Leitor, Autor, Editora e Analistas)
 - Processo passo-a-passo
 - Exemplos de resultados
 
@@ -114,7 +114,7 @@ Domine a **documentação formal** de requisitos:
                     APLICAÇÃO
                     (PARTE 4)
                          │
-              SISTEMA DE BIBLIOTECA
+              LIB VIRTUAL - E-BOOKS
                          │
                          ▼
                     VALIDAÇÃO
@@ -159,9 +159,9 @@ Domine a **documentação formal** de requisitos:
 | Tópico | Descrição |
 |--------|-----------|
 | Objetivo | O que vamos aprender |
-| Papéis | Stakeholder, Analista, Facilitador |
+| Papéis | Leitor, Autor, Editora, Analista, Facilitador |
 | Cronograma | 5 etapas de 60 minutos |
-| Sistema | Gerenciamento de Biblioteca |
+| Sistema | Lib Virtual - Plataforma de Assinatura de E-books |
 | Resultado | Exemplo de SRS final |
 | Aprendizados | Habilidades desenvolvidas |
 
@@ -242,4 +242,4 @@ R: Sim! PARTE 4 é um exercício prático completo.
 
 Para dúvidas, consulte o professor ou revise as partes anteriores.
 
-**Ultima atualização:** 09/02/2026
+**Ultima atualização:** 18/02/2026
