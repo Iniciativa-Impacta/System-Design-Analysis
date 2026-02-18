@@ -24,7 +24,7 @@ Engenharia de Requisitos é um conjunto de processos e técnicas para **identifi
 - Foco em objetivos de negócio
 
 **Exemplos:**
-- "O sistema deve gerenciar a biblioteca"
+- "O sistema deve oferecer plataforma de assinatura de e-books"
 - "Deve suportar múltiplos usuários simultaneamente"
 
 ### Requisitos de Software
@@ -42,8 +42,8 @@ Engenharia de Requisitos é um conjunto de processos e técnicas para **identifi
 
 **Exemplos:**
 - "O software DEVE permitir cadastro de usuários"
-- "O software DEVE permitir empréstimo de livros"
-- "O software DEVE gerar relatórios mensais"
+- "O software DEVE permitir leitura de e-books mediante assinatura"
+- "O software DEVE gerar relatórios mensais de consumo"
 
 #### 2. Requisitos Não-Funcionais
 **COMO o software deve fazer**
@@ -103,22 +103,22 @@ Fluxo Alternativo:
 Pós-condição: [Estado após conclusão]
 ```
 
-### Exemplo: Sistema de Biblioteca
+### Exemplo: Lib Virtual (Plataforma de Assinatura de E-books)
 
-**Caso de Uso: Emprestar Livro**
+**Caso de Uso: Iniciar Leitura de E-book**
 
-- **Ator:** Estudante
-- **Pré-condição:** Estudante autenticado, livro disponível
+- **Ator:** Leitor (Assinante)
+- **Pré-condição:** Leitor autenticado com assinatura ativa
 - **Fluxo Principal:**
-  1. Estudante seleciona livro
-  2. Sistema verifica disponibilidade
-  3. Sistema registra empréstimo
-  4. Sistema atualiza prazo de devolução
-  5. Sistema confirma operação
+  1. Leitor seleciona e-book do catálogo
+  2. Sistema verifica status da assinatura
+  3. Sistema libera acesso ao e-book
+  4. Sistema registra início da leitura
+  5. Sistema abre leitor digital
 - **Fluxo Alternativo:**
-  2a. Livro não disponível → Sistema mostra data prevista de devolução
-  3a. Estudante com multas pendentes → Sistema bloqueia empréstimo
-- **Pós-condição:** Livro registrado como emprestado
+  2a. Assinatura inativa → Sistema exibe opções de renovação
+  3a. E-book não disponível na região → Sistema sugere alternativas
+- **Pós-condição:** Leitura iniciada e progresso sendo rastreado
 
 ## 🔗 Relacionamento entre os Requisitos
 
@@ -133,8 +133,8 @@ Pós-condição: [Estado após conclusão]
 │  │ │ FUNCIONAIS   │  │ NÃO-FUNCIONAIS          │ │ │
 │  │ │              │  │                         │ │ │
 │  │ │ • Cadastro   │  │ • Performance           │ │ │
-│  │ │ • Empréstimo │  │ • Segurança             │ │ │
-│  │ │ • Devolução  │  │ • Usabilidade           │ │ │
+│  │ │ • Leitura    │  │ • Segurança             │ │ │
+│  │ │ • Assinatura │  │ • Usabilidade           │ │ │
 │  │ └──────────────┘  └──────────────────────────┘ │ │
 │  │                                                 │ │
 │  │ ┌──────────────────────────────────────────────┐ │ │
